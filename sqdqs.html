@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .typing {
+  overflow: hidden; /* Ensures the text stays within its container */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  border-right: 2px solid #00cfcc; /* Creates a blinking cursor */
+  animation: typing 4s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Text starts hidden */
+  }
+  to {
+    width: 100%; /* Text is fully visible */
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent; /* Cursor disappears */
+  }
+  to {
+    border-color: #00cfcc; /* Cursor reappears */
+  }
+}
+    </style>
+</head>
+<body>
+    <p class="typing">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, assumenda animi. Odio at similique quam eius deleniti ipsum dignissimos ut, minus rem temporibus cupiditate mollitia praesentium? Vero sed eaque tempora.
+    </p>
+</body>
+</html>
